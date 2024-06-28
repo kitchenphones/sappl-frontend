@@ -1,0 +1,12 @@
+{
+  "name": "sappl-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d public"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
