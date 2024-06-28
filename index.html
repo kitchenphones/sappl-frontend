@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAPPL</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showEntryForm()">Entry</a></li>
+            <li><a href="#" onclick="showSoldForm()">Sold</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="entry" class="form-section">
+            <h2>Entry</h2>
+            <form id="entryForm">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="text" id="accountNumber" name="accountNumber" placeholder="Account Number" required>
+                <input type="number" id="quantities" name="quantities" placeholder="Quantities" required>
+                <input type="text" id="imeiNumbers" name="imeiNumbers" placeholder="IMEI Numbers (comma separated)" required>
+                <input type="date" id="billDueDate" name="billDueDate" required>
+                <input type="text" id="mobileNumbers" name="mobileNumbers" placeholder="Mobile Numbers (comma separated)" required>
+                <input type="text" id="storeName" name="storeName" placeholder="Store Name" required>
+                <input type="date" id="date" name="date" required>
+                <input type="text" id="invoiceNumber" name="invoiceNumber" placeholder="Invoice Number" required>
+                <input type="text" id="marketName" name="marketName" placeholder="Market Name" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="sold" class="form-section" style="display: none;">
+            <h2>Sold</h2>
+            <form id="soldForm">
+                <input type="text" id="soldImeiNumber" name="imeiNumber" placeholder="IMEI Number" required>
+                <input type="number" id="amount" name="amount" placeholder="Amount" required>
+                <input type="text" id="soldInvoiceNumber" name="invoiceNumber" placeholder="Invoice Number" required>
+                <input type="text" id="soldStore" name="store" placeholder="Store" required>
+                <select id="status" name="status" required>
+                    <option value="sold">Sold</option>
+                </select>
+                <input type="date" id="soldDate" name="date" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <div id="console" style="background-color: black; color: white; padding: 10px;">
+        <h3>Console</h3>
+        <div id="countdown"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
